@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/tv_worker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/workImgView"
+            android:layout_marginTop="10dp"
+            android:text="您好:"
+            android:textColor="@color/black_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_wtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_worker"
+            android:layout_alignRight="@+id/workImgView"
+            android:layout_marginTop="10dp"
+            android:text="2015-01-01"
+            android:textColor="@color/black_gray"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/linerlayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/workImgView"
+            android:layout_below="@+id/tv_worker"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:src="@drawable/position1" />
+
+            <TextView
+                android:id="@+id/tv_position1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="位置:"
+                android:textColor="@color/black_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerlayout111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/workImgView"
+            android:layout_alignRight="@+id/linerlayout11"
+            android:layout_below="@+id/linerlayout11"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:src="@drawable/range1" />
+
+            <TextView
+                android:id="@+id/tv_range1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="考勤范围:"
+                android:textColor="@color/black_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerlayout110"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linerlayout111"
+            android:background="#04000000"
+            android:gravity="center_horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_time11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="18:00:25"
+                android:textColor="@color/black_gray"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/workImgView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/linerlayout110"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/goWorkBtn"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/workImgView"
+            android:layout_below="@+id/workImgView"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/onwork_click" />
+
+        <Button
+            android:id="@+id/offWorkBtn"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/goWorkBtn"
+            android:layout_alignRight="@+id/workImgView"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/offwork_click"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/onWorkView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/goWorkBtn"
+            android:layout_below="@+id/goWorkBtn"
+            android:layout_marginTop="16dp"
+            android:text="签到时间段:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/offWorkView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/onWorkView"
+            android:layout_below="@+id/onWorkView"
+            android:layout_marginTop="13dp"
+            android:text="签退时间段:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</ScrollView>

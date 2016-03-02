@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feed_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    android:orientation="vertical" >
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/suggestion_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_title"
+            android:textColor="@color/black_gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/suggestion_titles"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入标题" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/email_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_email"
+            android:textColor="@color/black_gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请留下您的email"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/other_contacts_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式："
+            android:textColor="@color/black_gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/other_contacts_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请留下您的QQ或电话"
+            android:singleLine="true" />
+    </LinearLayout>
+ -->
+    <EditText
+        android:id="@+id/suggestion_edit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@null"
+        android:gravity="left|top"
+        android:layout_marginTop="10dp"
+        android:hint="请留下您的宝贵意见和联系方式"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>

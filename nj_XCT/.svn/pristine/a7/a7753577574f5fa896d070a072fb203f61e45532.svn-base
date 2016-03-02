@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tab_"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tab_head"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title_bg" >
+
+            <Button
+                android:id="@+id/title_leftBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/back_selector"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" >
+            </Button>
+
+            <RadioGroup
+                android:id="@+id/radio_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp" >
+
+                <RadioButton
+                    android:id="@+id/radio_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tab_selector_organize"
+                    android:button="@null"
+                    android:gravity="center"
+                   
+                    android:text="日历"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_liebiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tab_selector_attention"
+                    android:button="@null" android:checked="true"
+                    android:gravity="center"
+                    android:text="列表"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_body"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tab_head"
+            android:background="@color/white1"
+            android:scrollbars="vertical" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

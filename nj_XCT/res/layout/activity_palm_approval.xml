@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/contentLiLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/approvalRg" >
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/approvalRg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_wdlc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_selector_wdlc"
+            android:gravity="center"
+            android:text="我的流程"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_wdsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_wdsp"
+            android:gravity="center"
+            android:text="我的审批"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_lslc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_lslc"
+            android:gravity="center"
+            android:text="历史流程"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</RelativeLayout>

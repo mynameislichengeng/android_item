@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/query_contact"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_contact_search_edittext"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+
+    <EditText
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:focusable="true"
+        android:inputType="none"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/contact_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:paddingLeft="25dp"
+        android:textSize="16sp"
+        android:hint="查询"
+        android:singleLine="true" />
+
+</RelativeLayout>

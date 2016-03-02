@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string-array name="markType1">
+        <item>旗标</item>
+        <item>标记为未读</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="markType2">
+        <item>旗标</item>
+        <item>标记为已读</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="markType3">
+        <item>取消旗标</item>
+        <item>标记为未读</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="markType4">
+        <item>取消旗标</item>
+        <item>标记为已读</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="operate">
+        <item>回复</item>
+        <item>转发</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="shareType">
+        <item>分享</item>
+        <item>撤销分享</item>
+    </string-array>
+    <string-array name="shareType1">
+        <item>分享</item>
+    </string-array>
+    <string-array name="news_categories">
+        <item>焦点</item>
+        <item>国内</item>
+        <item>国际</item>
+        <item>军事</item>
+        <item>体育</item>
+        <item>科技</item>
+        <item>汽车</item>
+        <item>财经</item>
+        <item>游戏</item>
+    </string-array>
+    <string-array name="netWorkChange">
+        <item>外网</item>
+        <item>内网</item>
+    </string-array>
+    <string-array name="diaryItems">
+        <item>删除</item>
+    </string-array>
+    <string-array name="backBtn">
+        <item>保存</item>
+        <item>取消</item>
+    </string-array>
+
+</resources>

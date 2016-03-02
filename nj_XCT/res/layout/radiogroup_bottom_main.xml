@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_radioGroup_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RadioGroup
+        android:id="@+id/bottom_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_compose_bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/radio_haoxin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector_haoxin"
+            android:button="@null"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector_contact"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radio_application"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector_application"
+            android:button="@null"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/radio_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector_set"
+            android:button="@null" />
+    </RadioGroup>
+
+    <!-- android:layout_marginLeft="185dp" -->
+
+
+    <!-- 显示在 我的 小红点 -->
+
+    <TextView
+        android:id="@+id/chat_message_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right|center"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tab_unread_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="10.0dip"
+        android:visibility="gone" />
+    <!-- android:layout_marginLeft="185dp" -->
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/message_count_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

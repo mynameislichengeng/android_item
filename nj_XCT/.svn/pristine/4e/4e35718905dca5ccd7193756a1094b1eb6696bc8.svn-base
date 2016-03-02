@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+	<RelativeLayout
+	    android:id="@+id/linearLayoutCustomerTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp">
+        
+	    <TextView
+	        android:id="@+id/cusNameText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/black"
+	        android:textSize="16sp" />
+	
+	    <TextView
+	        android:id="@+id/cusPhoneText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/cusNameText"
+	        android:textColor="@android:color/black"
+	        android:textSize="16sp" />
+	    
+	    <Button
+	        android:id="@+id/buttonCustomerEdit"
+	        android:layout_width="80dp"
+	        android:layout_height="40dp"
+	        android:text="编辑"
+	        android:textSize="16sp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dp"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/button_click"/>
+	    
+	</RelativeLayout>
+	
+	 <ListView
+        android:id="@+id/customerDetailList"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayoutCustomerTop"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/line"
+        android:dividerHeight="1dip" />
+	 
+	 <!--  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true">
+	    
+		<RadioGroup 
+		    android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_gravity="bottom"
+        	android:background="@drawable/base_bg"
+        	android:gravity="center_horizontal"
+        	android:orientation="horizontal" >
+        	
+		  <RadioButton
+            android:id="@+id/linkManBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="联系人"
+            android:button="@null"
+            android:textColor="#FFFFFF"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/tab_selector_contact_list"
+            android:checked="true" />
+
+	        <RadioButton
+            android:id="@+id/recordBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/tab_selector_contact_list"
+            android:text="记录"
+            android:button="@null" />
+		</RadioGroup>
+    </LinearLayout>
+	-->
+</RelativeLayout>

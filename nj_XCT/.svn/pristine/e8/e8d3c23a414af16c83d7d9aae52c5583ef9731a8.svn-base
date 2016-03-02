@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_style"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/session_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/divider_line_color"
+        android:dividerHeight="0.6dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:listSelector="@drawable/transparent_selector"
+        android:scrollbars="none" />
+
+</LinearLayout>

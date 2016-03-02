@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xguanjia.hx.common.ElasticScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/top"
+    android:background="#ffffff"
+    android:fadingEdge="none"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+
+</com.xguanjia.hx.common.ElasticScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="stringDataUpload">数据上报</string>
+    <string name="stringDataTitle">标题：</string>
+    <string name="stringDataAddress">地址：</string>
+    <string name="stringDataSusgestion">处理意见：</string>
+    <string name="stringDataContent">请填写上报内容</string>
+    <string name="stringSubmit">提交</string>
+    <string name="stringSending">数据上传中，请稍后</string>
+    <string name="stringUploadAssistant">上传助手</string>
+    <string name="stringDataHistory">上报处理</string>
+    <string name="stringAbout">关于</string>
+    <string name="stringModifyPwd">修改密码</string>
+    <string name="stringCheckUpload">检测更新</string>
+    <string name="stringProcess">未处理</string>
+    <string name="stringUnProcess">已处理</string>
+    <string name="stringUpdateSuccess">更新成功!</string>
+    <string name="stringNoUpdateData">暂无更新!</string>
+    <string name="stringSuccess">上报成功!</string>
+    <string name="stringUnSuccess">上报失败!</string>
+    <string name="stringDataUploadhint">请输入上报内容</string>
+    <string name="stringDataUploadYijianhint">请输入处理意见</string>
+
+</resources>

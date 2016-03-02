@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_preference_color"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/pointsfor_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pointsfor_img"
+        android:text="500MB流量"
+        android:textColor="#000000"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/points_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_tv"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/pointsfor_img"
+        android:text="积分：5000分"
+        android:textColor="#949494"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/gjq_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_tv"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/points_tv"
+        android:text="/1张"
+        android:textColor="#949494"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/points_tv"
+        android:layout_toRightOf="@+id/pointsfor_img"
+        android:text="积分满500MB流量，即可兑换"
+        android:textColor="#949494"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/exchange_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/title_tv"
+        android:background="@drawable/radio"
+        android:textSize="16sp" />
+
+</RelativeLayout>

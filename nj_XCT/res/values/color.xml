@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="theme">#FE7613</color>
+    <color name="greys">#7D7D7D</color>
+    <color name="bule">#FFFFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="white1">#f0f0f0</color>
+    <color name="grey">#87CEEB</color>
+    <color name="black_gray">#88000000</color>
+     <color name="gray_contact">#949494</color>
+    <color name="transparent">#00000000</color>
+    <color name="gold">#b89766</color>
+    <color name="select">#98aacc</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="blue">#87CEFA</color>
+    <color name="b">#b0000000</color>
+    <color name="crm_detail_check">#C1C1C1</color>
+    <color name="crm_detail_normal">#D4D4D4</color>
+    <color name="move_in_normal">#63B8FF</color>
+    <color name="move_in_press">#66CD00</color>
+    <color name="red">#CD0000</color>
+    <color name="preference_n">#FFFFFF</color>
+    <color name="preference_r">#FFFF0000</color>
+    <color name="preference_p">#D7D7D7</color>
+    <color name="holo_blue_light">#ff0085D0</color>
+    <color name="black">#000000</color>
+    <color name="none_color">#00000000</color>
+    <color name="blue_overlay">#2B73BC</color>
+	<color name="blue_other">#0479fb</color>
+    <color name="deepskyblue">#00BFFF</color>
+    <!-- 淡灰色  -->
+    <color name="gainsboro">#dcdcdc</color>
+    <!-- red -->
+    <color name="sild_dimgrey">#bd1a0b</color>
+    <color name="sild_gray">#f24131</color>
+	<color name="other_white">#ffffff</color>
+	
+    <color name="lightgrey">#ff888888</color>
+    <color name="navpage">#ffe1e0de</color>
+    <color name="chat_send_text_color">#888888</color>
+    <color name="transpant">#00000000</color>
+    <color name="color1">#CD3333</color>
+    <color name="color2">#CD0000</color>
+    <color name="chat_black_alpa">#88000000</color>
+    
+     <!-- 页面背景色 -->
+    <color name="backgroud_color">#EFEFEF</color>
+    <color name="splash_backgroud_color">#e8efef</color>
+    <!-- 对话框按钮按下颜色 -->
+    <color name="dialog_btn_d_color">#E0CCCCCC</color>
+    <!-- 对话框按钮正常颜色 -->
+    <color name="dialog_btn_n_color">#E0ffffff</color>
+    <!-- 对话框按钮文字颜色 -->
+    <color name="dialog_text_color">#0079ff</color>
+    <!-- 列表分隔线颜色 -->
+    <color name="divider_line_color">#C8C7CC</color>
+    <!-- Tabbar文字选中颜色 -->
+    <color name="tab_text_d_color">#007BFD</color>
+    <!-- Tabbar文字正常颜色 -->
+    <color name="tab_text_n_color">#898989</color>
+    <!-- 登录文本框默认文本颜色 -->
+    <color name="hint_color">#C7C7C7</color>
+    <!-- 标题栏按钮文字颜色 -->
+    <color name="title_right_text_color">#007BFD</color>
+    <!-- 标题栏标题文字颜色 -->
+    <color name="title_color">#ffffff</color>
+    <!-- 新用户注册字体颜色 -->
+    <color name="new_user_register_text_color">#8A8A8A</color>
+    <!-- ListViewItem按下时颜色 -->
+    <color name="high_lighted_color">#44B9F6</color>
+    <!-- 应用中所用的字体灰色 -->
+    <color name="content_gray_color">#999999</color>
+    <!-- 搜索背景颜色 -->
+    <color name="search_bg_color">#D9D9D9</color>
+    <!-- 会话列表删除背景 -->
+    <color name="delete_session_btn_color">#DC5041</color>
+    <!-- 好友搜索背景颜色 -->
+    <color name="search_dialog_bg">#b0000000</color>
+    <color name="file_len_text_color">#686767</color>
+</resources>

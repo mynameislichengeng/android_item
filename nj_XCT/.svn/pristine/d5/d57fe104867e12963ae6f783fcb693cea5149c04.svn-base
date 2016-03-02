@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/search_bg_color"
+    android:orientation="vertical"
+    android:paddingBottom="7dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="7dp" >
+
+    <RelativeLayout
+        android:id="@+id/inputlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp" 
+        android:layout_toLeftOf="@id/cancelbtn">
+
+        <EditText
+            android:id="@+id/keyword"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/search_edit_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/search"
+            android:paddingLeft="40dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/search_edit_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/search"
+            android:paddingLeft="40dp"
+            android:id="@+id/contentView"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/inputlayout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/search_icon" />
+    
+    <Button 
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:background="@drawable/round_half_transparent_btn"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/cancelbtn"
+        android:gravity="center"
+        android:textColor="@color/content_gray_color"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:text="@string/cancel"/>
+
+</RelativeLayout>

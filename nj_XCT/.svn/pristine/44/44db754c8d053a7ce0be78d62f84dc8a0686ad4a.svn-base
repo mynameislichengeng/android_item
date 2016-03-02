@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_style"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout"/>
+    
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textColorHint="@color/hint_color"
+        android:paddingLeft="7dp"
+        android:id="@+id/content"
+        android:background="@drawable/register_edit_box_bg"
+        android:padding="7dp"
+        android:gravity="top|left"
+        android:textCursorDrawable="@null"
+        android:hint="@string/input_feedback_content"/>
+
+</LinearLayout>

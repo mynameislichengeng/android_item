@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chinamobile.salary"
+    android:versionCode="1"
+    android:versionName="1.0.3" >
+
+    <!-- android:versionName="1.0.3"   正式版 -->
+    <!-- android:versionName="1.3.8"  测试版 -->
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="10" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 能显示未读数字的手机类型 -->
+    <!-- Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <!-- 友盟 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 友盟 结束 -->
+
+
+    <!--
+         <permission
+        android:name="com.chinamobile.salary.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    -->
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <!-- <uses-permission android:name="com.chinamobile.salary.permission.JPUSH_MESSAGE" /> -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 新版本不需要 -->
+    <!-- <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 视频 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 通知栏权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.xguanjia.hx.application.MainApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/StyledIndicators" >
+        <activity
+            android:name="com.dianyitech.moa.menu.activity.GridMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.application.activity.UnSendDataActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <!-- 启动页面 -->
+        <activity
+            android:name="com.xguanjia.hx.login.activity.StartupActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 登录页面 -->
+        <activity
+            android:name="com.xguanjia.hx.login.activity.TeLoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.login.activity.OtherLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.login.activity.setPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 附件选择菜单 -->
+        <activity
+            android:name="com.xguanjia.hx.diary.activity.AttachmentMenuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 内部消息列表 -->
+        <activity
+            android:name="com.xguanjia.hx.information.activity.InfoListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 外部邮件 -->
+        <activity
+            android:name="com.xguanjia.hx.outinfomation.activity.EmailSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.outinfomation.activity.EmailListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.outinfomation.activity.EmailListListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.outinfomation.activity.EmailListListInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.outinfomation.activity.OutInfoWriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.outinfomation.activity.EmailSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.outinfomation.activity.OutInfoTransformActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.outinfomation.activity.OutInfoReplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.outinfomation.activity.OutBottomCenterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.xguanjia.hx.outinfomation.activity.OutBottomLeftActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.xguanjia.hx.outinfomation.activity.OutBottomRightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+
+        <!-- 内部邮件详情 -->
+        <activity
+            android:name="com.xguanjia.hx.information.activity.InfoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.information.activity.OutBottomLeftActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.xguanjia.hx.information.activity.InfoBottomCenterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.xguanjia.hx.information.activity.OutBottomRightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+
+        <!-- 内部邮件回复转发 -->
+        <activity
+            android:name="com.xguanjia.hx.information.activity.ReplyInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.information.activity.TransmitActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 内部消息选人 -->
+        <activity
+            android:name="com.xguanjia.hx.information.activity.InfoChooseOrgPersonActicity"
+            android:screenOrientation="portrait" />
+        <!-- 内部邮件保存 -->
+        <activity
+            android:name="com.xguanjia.hx.information.activity.InfoSaveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.xguanjia.hx.information.activity.AttachSerachActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+
+        <!-- 内部邮件删除 -->
+        <activity
+            android:name="com.xguanjia.hx.information.activity.InfoBottomRightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.xguanjia.hx.information.activity.InfoBottomLeftActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <!-- 公告通知 -->
+        <activity
+            android:name="com.xguanjia.hx.notice.NoticeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.moa.notice.list" />
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+
+        <!-- 会议通知 -->
+        <activity
+            android:name="com.xguanjia.hx.noticemeet.NoticeMettActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.noticemeet.NoticeMettIntroActivity"
+            android:screenOrientation="portrait" />
+        <!-- 系统提醒页面 -->
+        <activity
+            android:name="com.xguanjia.hx.haoxin.activity.SystemToRemind"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <!-- 详细公告 -->
+        <activity
+            android:name="com.xguanjia.hx.notice.NoticeIntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.moa.notice.intro" />
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+
+        <!-- 设置界面 -->
+        <activity
+            android:name="com.xguanjia.hx.setting.activity.TeSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 发信息选人 -->
+        <activity
+            android:name="com.xguanjia.hx.information.activity.OrganizationalContactListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 总经理信箱——新建 -->
+        <activity
+            android:name="com.xguanjia.hx.president.PresidentOfNewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 消息 -->
+        <activity
+            android:name="com.xguanjia.hx.push.client.NotificationDetailsActivity"
+            android:label="Notification Details" >
+            <intent-filter>
+                <action android:name="NotificationDefault" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.push.client.NotificationSettingsActivity"
+            android:label="Notification Settings" >
+        </activity>
+
+        <service
+            android:name="com.xguanjia.hx.push.client.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService"
+            android:process=":haoxeeMessage" >
+            <intent-filter>
+                <action android:name="org.androidpn.client.HaoXeeNotificationService" />
+            </intent-filter>
+        </service>
+
+        <!-- 分享选人界面 -->
+        <activity
+            android:name="com.xguanjia.hx.filecabinet.activity.ShareFileChooseOrgPersonActicity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.information.activity.ContactPersonTreeActicity"
+            android:screenOrientation="portrait" />
+
+        <!-- 首次登陆欢迎启动页 -->
+        <activity
+            android:name="com.xguanjia.hx.MainMenuActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 欢迎启动页滑屏 -->
+        <activity
+            android:name="com.xguanjia.hx.login.welcome.MoaWelcomeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 提醒功能 -->
+        <receiver android:name="com.xguanjia.hx.task.receiver.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.alarm.demo.action" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 关于页面 -->
+        <activity
+            android:name="com.xguanjia.hx.setting.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.setting.activity.IntroTeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.setting.activity.VersionUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.setting.activity.WebviewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- add by wangwei 20121212 start -->
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.UpdateInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactOrganizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactAllDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactSelfDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactAllListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactShareListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactShareOrganizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactAllOrganizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactSelfListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactSelfOrganizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactDetailOperateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactAllDetailOperateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactAttentionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.OthersContactActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- end -->
+        <activity
+            android:name="com.xguanjia.hx.HaoXinProjectActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- 日程 -->
+        <activity
+            android:name="com.xguanjia.hx.task.activity.DayAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.xguanjia.hx.task.activity.ScheduleTabHostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.task.calendar.CalendarListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.task.activity.ScheduleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.task.activity.ScheduleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.task.activity.SelectRemindTimeTypeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 日历 -->
+        <activity
+            android:name="com.xguanjia.hx.task.calendar.CalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.task.activity.CalendarViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.task.activity.SecduleDiaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.xguanjia.hx.schedule.activity.CalendarViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.schedule.activity.ScheduleListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 好信 -->
+        <activity
+            android:name="com.xguanjia.hx.haoxin.activity.HaoXinGroupActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 好信即时通讯 -->
+
+        <activity
+            android:name="com.xguanjia.hx.haoxinchat.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.haoxinchat.GroupChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.ChatDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.ChatMainActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.CreateGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.GroupDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.InputContentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.InviteUserListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.MenberListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.NotifyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.RotateImageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.SearchGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.SearchUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.ShowImageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.UserInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.FileDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.IndexActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.ModifyPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.NewTempChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.haoqee.chat.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <!-- 公文 -->
+        <activity
+            android:name="com.xguanjia.hx.postcome.activity.PostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.postcome.activity.ComItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.postcome.activity.MeetingContnetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.xguanjia.hx.postcome.activity.ComePersonTreeActicity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.postcome.activity.ComeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.postcome.activity.PostItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.postcome.activity.DepartPersonTreeActicity"
+            android:screenOrientation="portrait" />
+
+        <!-- 通讯录 -->
+        <!-- 应用 -->
+        <activity
+            android:name="com.xguanjia.hx.application.activity.ApplicationGroupActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置 -->
+        <activity
+            android:name="com.xguanjia.hx.set.SetGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.set.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.set.SetModifyPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.set.SetPortraitActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.xguanjia.hx.set.SetOtherInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.xguanjia.hx.filecabinet.activity.FileListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.filecabinet.activity.FileDetailOperateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.filecabinet.activity.FileDetailUploadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.filecabinet.activity.MyFileAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.filecabinet.activity.MyCabinetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.filecabinet.activity.MyPubcabinetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.filecabinet.activity.MySharecabinetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.gpswork.activity.GpsWorkAttendanceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.gpswork.activity.GpsWorkHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.gpswork.activity.GpsAttendanceListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 工作日志 -->
+        <activity
+            android:name="com.xguanjia.hx.diary.activity.WorkDiaryListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.diary.activity.ShareDiaryListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.diary.activity.DiaryReviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.diary.activity.DiaryReviewDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.diary.activity.GroupDiaryFormActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.diary.activity.ReviewDiaryListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.diary.activity.WorkDiaryDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.diary.activity.WorkDiaryWriteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 数据上报 -->
+        <activity
+            android:name="com.xguanjia.hx.data.activity.DataUploadActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.data.activity.DataHistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.data.activity.DataUploadDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 意见反馈 -->
+        <activity
+            android:name="com.xguanjia.hx.feedback.SuggestionFeedbackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.set.SetPersonalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.information.activity.ContactDetailOperateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+
+
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+
+
+        <!-- 消息编写 -->
+        <activity
+            android:name="com.xguanjia.hx.information.activity.InfoWriteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 附件操作 -->
+        <activity
+            android:name="com.xguanjia.hx.information.activity.InfoAttachmentOperateActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <!-- 信息回复 -->
+        <activity
+            android:name="com.xguanjia.hx.information.activity.InfoReplyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 信息转发 -->
+        <activity
+            android:name="com.xguanjia.hx.information.activity.InfoTransformActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- crm -->
+        <activity
+            android:name="com.xguanjia.hx.crms.customer.activity.CustomerGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.customer.activity.CustomerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.customer.activity.CustomerAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.customer.activity.CustomerDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.contact.activity.ContactPersonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.contact.activity.ContactsAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.xguanjia.hx.crms.visit.activity.AddRecord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.visit.activity.DetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.visit.activity.VisitList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.contact.activity.ContactsEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.GroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.OrganizationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.GroupManaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.GroupPersonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.customer.activity.CustomerEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.customer.activity.CustomLabelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.visit.activity.AddVisitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.visit.activity.HistoryVisitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.visit.activity.VisitExecuteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.visit.activity.VisitExecuteDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.visit.activity.VisitPlanDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.visit.activity.VisitPlanEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.crms.visit.activity.VisitPlanListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 工作任务 -->
+        <activity
+            android:name="com.xguanjia.hx.task.activity.TaskDisposeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.task.activity.TaskDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.task.activity.TabHostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.task.activity.TabHostActivity1"
+            android:screenOrientation="portrait" />
+        <!-- 地图 -->
+        <activity
+            android:name="com.xguanjia.hx.task.activity.TaskMapActivity"
+            android:screenOrientation="portrait" />
+        <!-- 列表 -->
+        <activity
+            android:name="com.xguanjia.hx.task.activity.TaskListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 掌中审批 -->
+        <activity
+            android:name="com.xguanjia.hx.approval.activity.PalmApprovalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.approval.activity.MyFlowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.approval.activity.MyApprovalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.approval.activity.HistoryFlowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.approval.activity.ApprovalTemplateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.approval.activity.ApprovalTemplateDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.approval.activity.MyFlowDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.approval.activity.HistoryFlowDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.approval.activity.ApprovalTemplateFieldActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.approval.activity.MyApprovalDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.approval.activity.TemplateContnetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- 上报 -->
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportPalmApprovalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportMyFlowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportMyApprovalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportHistoryFlowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportTemplateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportTemplateDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportMyFlowDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportHistoryFlowDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportTemplateFieldActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportMyApprovalDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportTemplateContnetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.xguanjia.hx.report.activity.ReportDataUploadActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- ****************上报****************** -->
+        <activity
+            android:name="com.xguanjia.hx.newdr.activity.NewDrActivty"
+            android:screenOrientation="portrait" />
+        <!-- 上报历史 -->
+        <activity
+            android:name="com.xguanjia.hx.newdr.activity.NewDrHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.newdr.activity.NewDrTemplateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.newdr.activity.NewDrTemplateDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.application.activity.ApplicationGroupActivity2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 4g -->
+        <activity
+            android:name="com.xguanjia.hx.FGOperating.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.FGOperating.activity.PopularizeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.FGOperating.activity.ResultUpdateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.FGOperating.activity.PointsForActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.FGOperating.activity.MineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.FGOperating.activity.ExChangeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.FGOperating.activity.PointsForRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.FGOperating.activity.UploadRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.FGOperating.activity.PointExchangeRulesActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.FGOperating.activity.FGNoticeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.FGOperating.activity.FgNoticeIntroActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 工作计划 -->
+        <activity
+            android:name="com.xguanjia.hx.workplan.activity.PlanTypeListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.workplan.activity.BuildPlanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.workplan.activity.WorkPlanDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.workplan.activity.PersonalWorkPlanListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.workplan.activity.DepartmentWorkPlanListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.workplan.activity.OperationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+
+        <!-- 工作计划 -->
+        <activity
+            android:name="com.xguanjia.hx.workplan.activity.WorkPlanTotalActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 在线考试 -->
+        <activity
+            android:name="com.xguanjia.hx.onlinetest.activity.IndexActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.onlinetest.activity.OnlineTestListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.onlinetest.activity.TextResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.onlinetest.activity.OnlineTestDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.onlinetest.activity.OnlineTestDetailCTJActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 我的待办 -->
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.MyAgentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.MyAgentDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.MyAgentCYActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.MyAgentCYDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.MyAgentSQActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.MyAgentSQDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.WebviewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.BuildAgentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.SQAgentTypeDetailListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.SQAgentTypeListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.SubmitActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我办理的流程 -->
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.MyAgentRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xguanjia.hx.myagent.activity.MyAgentRecordDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 后台数据上报服务 -->
+        <service android:name="com.xguanjia.hx.service.DataReportService" >
+        </service>
+
+        <!-- 工作圈 -->
+        <activity
+            android:name="com.xguanjia.hx.workring.activity.DiscussActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.workring.activity.WorkRingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.workring.activity.WriteDiscussActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.workring.activity.ImageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.workring.activity.WriteJokeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.workring.pic.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.workring.view.chooseimg.MyActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- opoenfire文件传输  聊天 -->
+
+        <activity
+            android:name="com.xguanjia.hx.contact.openfire.activity.SendMessageOpenfireActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.openfire.activity.UsersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.contact.openfire.activity.ChatActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.xguanjia.hx.contact.meet.activity.MeetGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.payroll.activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.payroll.activity.PayrollActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.payroll.activity.ViewpagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.payroll.activity.ExpenseAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.payroll.activity.PayrolldbActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.payroll.activity.PayRollImageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.payroll.piechart.PieChartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.payroll.activity.ExpenseAccountApplicationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.xguanjia.hx.payroll.activity.ExpenseAccountDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.xguanjia.hx.set.gesture.activity.SafeSetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.xguanjia.hx.set.gesture.activity.YanzhengSafeSetActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- trace -->
+        <meta-data
+            android:name="prob_appkey"
+            android:value="1423571016573418bf67b68cb6e40dd6" >
+        </meta-data>
+        <meta-data
+            android:name="prob_app_channel"
+            android:value="unknown" >
+        </meta-data>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="71219AA100277F5838738F10C759B2F3295551CE" />
+
+        <activity
+            android:name="com.xguanjia.hx.contact.activity.ContactSelfNewListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.workring.activity.WorkPersonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xguanjia.hx.workring.activity.WorkRingMyCollectListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 收入全部 -->
+        <activity
+            android:name="com.xguanjia.hx.payroll.activity.IncomeTotalActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.xguanjia.hx.sharesdk.activity.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.xguanjia.hx.lc.a.Main_Activity"
+            android:label="@string/title_activity_main_" >
+        </activity>
+        <!-- meichat -->
+          <activity
+            android:name="com.mechat.mechatlibrary.ui.ConversationActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light" />
+        <activity android:name="com.mechat.mechatlibrary.ui.ZoomImageActivity" />
+
+        <service
+            android:name="com.mechat.mechatlibrary.MechatService"
+            android:label="MechatService" />
+        <service android:name="com.xguanjia.hx.openfire.listener.XMPPChatListenerService"></service>
+         <service android:name="com.xguanjia.hx.openfire.listener.XMPPFileListenerService"></service>
+    </application>
+
+</manifest>

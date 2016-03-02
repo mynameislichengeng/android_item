@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/exit_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/contact_detail_operate_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/edit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/contact_operate_btn_style"
+                android:gravity="center"
+                android:text="编辑"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/delete_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/contact_operate_btn_style"
+                android:gravity="center"
+                android:text="删除"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/update_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/contact_operate_btn_style"
+                android:gravity="center"
+                android:text="修改"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/stop_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/contact_operate_btn_style"
+                android:gravity="center"
+                android:text="暂停"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/end_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/contact_operate_btn_style"
+                android:gravity="center"
+                android:text="结束"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/cont_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/contact_operate_btn_style"
+                android:gravity="center"
+                android:text="继续"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

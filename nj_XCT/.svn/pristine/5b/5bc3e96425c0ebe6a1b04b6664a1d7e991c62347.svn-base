@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_radioGroup_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RadioGroup
+        android:id="@+id/bottom_radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_bg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_custom"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_contacts"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_visit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_visit"
+            android:gravity="center"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</RelativeLayout>

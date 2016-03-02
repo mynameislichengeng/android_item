@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <item type="id" name="news_category" />
+     <item type="id" name="bottom_dividing_line"></item>
+     <item type="id" name="peas_area"/>
+     <item type="id" name="previous_record_btn"></item>
+     <item type="id" name="next_record_btn"></item>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#F3F3F3"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgLoginLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/login_logo1" />
+
+    <EditText
+        android:id="@+id/partyIdEt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLoginLogo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/form_bg"
+        android:gravity="center"
+        android:hint="请输入企业号"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/userEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/partyIdEt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/login_username1_bg"
+        android:gravity="center_vertical"
+        android:hint="手机号码"
+        android:inputType="number"
+        android:paddingLeft="44dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userEdit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login_password1_bg"
+        android:gravity="center_vertical"
+        android:hint="密  码"
+        android:paddingLeft="44dp"
+        android:password="true"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEdit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" >
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/logincheckbox"
+            android:text="自动登录"
+            android:textColor="#4d4d4d" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/white_normal_20"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/relativelayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_1"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="登 录" >
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginBtn" >
+
+        <ImageView
+            android:id="@+id/yanshiImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/loginsyanshi" />
+
+        <ImageView
+            android:id="@+id/otherLoginImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/mobilelogin"
+             />
+
+        <Button
+            android:id="@+id/wjma"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/yanshiImg"
+            android:paddingRight="20dp"
+            android:background="@null"
+            android:textColor="#FB954B"
+            android:visibility="gone"
+            android:paddingBottom="5dp"
+            android:textSize="15sp"
+            android:text="忘记密码"
+            android:paddingTop="10dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:src="@drawable/login_bottom" />
+
+</RelativeLayout>

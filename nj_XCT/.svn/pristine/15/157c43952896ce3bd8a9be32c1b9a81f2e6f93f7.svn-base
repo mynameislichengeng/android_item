@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/checkperson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@drawable/choose_person_selected"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/headerimage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/checkperson"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/default_header" />
+        </RelativeLayout>
+        
+        <Button 
+            android:layout_width="85dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/kick_out"
+            android:background="@drawable/group_kick_out_btn"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:id="@+id/kickBtn"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:focusable="false"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/header"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/kickBtn"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/content_gray_color"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

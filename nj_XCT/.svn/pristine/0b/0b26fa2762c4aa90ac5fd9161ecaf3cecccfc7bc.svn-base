@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+ 	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/nameLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="#404040"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/nameBgTv"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/contact_name_bottom"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:id="@+id/nickNameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="用户昵称 " >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/nickNameTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/birthdayLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="生日" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/birthdayTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phoneLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="手机" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/phoneTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/familyPhoneLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="家庭电话" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/familyPhoneTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/workPhoneLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="工作电话" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/workPhoneTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/workFaxLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="工作传真" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/workFaxTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skypeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="SKYPE" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/skypeTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/msnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="MSN" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/msnTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+        
+        
+        
+
+        <LinearLayout
+            android:id="@+id/qqLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="QQ" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/qqTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/workPlaceLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="单位名称" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/workPlaceTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/personalMailBoxLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="个人邮箱" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/personalMailBoxTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/workMailBoxLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="工作邮箱" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/workMailBoxTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phoneMailBoxLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="手机邮箱" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/phoneMailBoxTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/workAddressLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="工作地址" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/workAddressTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/homeAddressLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="家庭地址" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/homeAddressTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/remarkLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black_normal_20"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="备注" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/remarkTv"
+                    style="@style/black_normal_20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

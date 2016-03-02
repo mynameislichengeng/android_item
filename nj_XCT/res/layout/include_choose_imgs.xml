@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_round_xml"
+    android:orientation="vertical" >
+
+    <com.xguanjia.hx.common.MeasuredGridView
+        android:id="@+id/gvImgs"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:horizontalSpacing="6dp"
+        android:numColumns="4"
+        android:padding="6dp"
+        android:verticalSpacing="6dp" >
+    </com.xguanjia.hx.common.MeasuredGridView>
+  <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:paddingTop="2dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/dingwei1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="获取当前位置"
+            android:textColor="#0479fb" />
+<!-- 
+        <Button
+            android:id="@+id/btnDel"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/del" /> -->
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="10dip"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="@drawable/list_selector">
+    
+    <ImageView
+        android:id="@+id/deletebtn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/delete_notify_btn"
+        android:visibility="gone" />
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/deletebtn"
+        android:layout_centerVertical="true"
+        android:id="@+id/servername"
+        android:layout_toLeftOf="@+id/currentIcon"
+        android:textColor="@color/black"/>
+    
+    <ImageView
+        android:id="@+id/currentIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/desc"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/server_selected_icon"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white1" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:id="@+id/dataLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/dataTitleView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stringDataTitle"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/dataTitleText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/dataTitleView"
+                        android:background="#00000000"
+                        android:inputType="none" />
+                   
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:id="@+id/templateFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/dataAddressView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/stringDataAddress"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/dataAddressText"
+                        android:layout_width="206dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/dataAddressView"
+                        android:background="#00000000"
+                        android:editable="false"
+                        android:inputType="none" />
+
+                    <ImageView
+                        android:id="@+id/location_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/iconmarka" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line" />
+
+                <com.xguanjia.hx.report.view.ReportTemplateFieldListView
+                    android:id="@+id/templateFieldLv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:cacheColorHint="#00000000" />
+
+                <Button
+                    android:id="@+id/templateDetialBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/template_btn_selector"
+                    android:text="添加明细"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/dataContentText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:background="#00000000"
+                    android:gravity="top|left"
+                    android:hint="@string/stringDataUploadhint"
+                    android:minLines="5" />
+
+                <LinearLayout
+                    android:id="@+id/dataSusgestionView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line" />
+
+                    <TextView
+                        android:id="@+id/dataSusgestionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stringDataSusgestion"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/dataSusgestionText"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@null"
+                        android:gravity="left|top"
+                        android:hint="@string/stringDataUploadYijianhint"
+                        android:inputType="none"
+                        android:minLines="3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.xguanjia.hx.attachment.view.AttachmentGridView
+                android:id="@+id/imageChooseGrid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dataLayout"
+                android:layout_gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:verticalSpacing="5dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/dataAddAttachmentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/president_selector" />
+
+    <Button
+        android:id="@+id/infoRecordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/dataAddAttachmentBtn"
+        android:background="@drawable/record_selector" />
+
+</RelativeLayout>

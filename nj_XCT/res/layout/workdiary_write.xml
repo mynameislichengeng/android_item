@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/diaryLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/titlelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/diary_title"
+                        style="@style/black_normal_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diary_title"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/diaryTitleEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/diary_title"
+                        android:background="#00000000"
+                        android:inputType="none"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/type_relative"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="类型选择："
+                        android:textColor="@color/gray_contact"
+                        android:textSize="17sp"/>
+
+                    <RadioGroup
+                        android:id="@+id/type_radiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/workdiary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="工作日志"
+                            android:gravity="center_vertical"
+                            android:button="@drawable/check_box_seletor"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/persondiary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="个人日志"
+                             android:gravity="center_vertical"
+                            android:button="@drawable/check_box_seletor"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/title_iv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <RelativeLayout
+                    android:id="@+id/locationLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/address_title"
+                        style="@style/black_normal_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工作位置："
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/gray_contact"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/diary_addr_edit"
+                        android:layout_width="206dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/address_title"
+                        android:layout_weight="0.40"
+                        android:background="#00000000"
+                        android:editable="false"
+                        android:inputType="none"
+                        android:layout_centerVertical="true"
+                        android:maxLines="5"
+                        android:textSize="17sp" >
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/location_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/iconmarka" />
+                </RelativeLayout>
+                 <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+                <RelativeLayout
+                    android:id="@+id/timelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/diary_time"
+                        style="@style/black_normal_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工作时间："
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/gray_contact"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/diaryTime_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/diary_time"
+                        android:background="#00000000"
+                        android:inputType="none"
+                        android:textColor="#000000"
+                        android:hint="点击选择时间"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip" >
+
+                    <TextView
+                        style="@style/black_normal_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diary_content"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/diaryContentEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:paddingLeft="10dp"
+                        android:gravity="left|top"
+                        android:hint="请输入日志内容"
+                        android:textSize="17sp"
+                        android:inputType="none"
+                        android:minLines="5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.xguanjia.hx.attachment.view.AttachmentGridView
+                android:id="@+id/imageChooseGrid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/diaryLayout"
+                android:layout_gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:verticalSpacing="5dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/infoRecordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/affix_iv"
+        android:background="@drawable/record_selector"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/affix_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/president_selector"
+        android:visibility="gone" />
+
+</RelativeLayout>

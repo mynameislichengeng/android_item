@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llHomeList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/nameFrameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal"/>
+        <!-- android:padding="10dp"
+        android:paddingLeft="20dp"  -->
+        
+
+    <ImageView
+        android:id="@+id/nameBgTv5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/default_avatar1" />
+
+   <!--  <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/my_collect2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/mycollect" >
+        </ImageView>
+    </RelativeLayout> -->
+    
+</LinearLayout>

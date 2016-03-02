@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000">
+    
+     <ImageView
+        android:id="@+id/imgLoadingFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_centerInParent="true"
+        android:background="@anim/progress_round"/>
+    
+    <!--  
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_bg">
+        
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_centerInParent="true">
+    
+    <ImageView
+        android:id="@+id/imgLoadingFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@anim/progress_round"/>
+    
+    <TextView
+        android:id="@+id/txtLoadingMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLoadingFlag"
+        android:layout_centerHorizontal="true" 
+        android:layout_marginTop="2dp"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"/>
+    
+    </RelativeLayout>
+    
+    </RelativeLayout>
+    
+    -->
+
+</RelativeLayout>

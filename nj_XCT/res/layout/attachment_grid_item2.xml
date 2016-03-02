@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content" 
+    >
+
+    <ImageView
+        android:id="@+id/fileDefaultImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:gravity="center" />
+    <ImageView
+        android:id="@+id/addphoto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/fileNameView"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/fileDefaultImage"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" 
+        android:maxLines="2"/>
+
+    <TextView
+        android:id="@+id/fileSizeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fileNameView"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>

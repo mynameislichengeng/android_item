@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white1" >
+
+    <!-- 头部布局 start -->
+
+    <include
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/title" >
+    </include>
+    <!-- 头部布局 end -->
+  <!-- 其他通讯录头部 start -->
+
+    <include
+        android:id="@+id/topRadio"
+        android:layout_width="fill_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/top"
+        layout="@layout/other_contact_list" 
+        android:visibility="gone">
+    </include>
+    <!-- 其他通讯录头部 end -->
+
+    <!-- 中间主布局start -->
+
+    <RelativeLayout
+        android:id="@+id/main_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/topRadio">
+    </RelativeLayout>
+    <!-- 中间主布局end -->
+
+
+    <!-- 底部按钮布局start -->
+
+    <include
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/radiogroup_bottom_main" >
+    </include>
+    
+    <!-- 底部按钮布局end -->
+    <include
+        android:id="@+id/bottom1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/radiogroup_bottom1" >
+    </include>
+    
+     <!-- 底部按钮布局end -->
+    <include
+        android:id="@+id/bottom2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/discuss" >
+    </include>
+
+</RelativeLayout>

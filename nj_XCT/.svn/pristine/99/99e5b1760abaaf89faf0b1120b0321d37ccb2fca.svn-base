@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_preference_color"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/orgImageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="6dp"
+        android:background="@drawable/contact_name_bottom"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@drawable/org_icon"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/orgChooseCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/contactNameBgTv"
+        android:layout_alignParentRight="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/organizationalTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/orgImageIcon"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+  
+<!--     <TextView
+        android:id="@+id/personCountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/orgChooseCb" />
+ -->
+
+</RelativeLayout>

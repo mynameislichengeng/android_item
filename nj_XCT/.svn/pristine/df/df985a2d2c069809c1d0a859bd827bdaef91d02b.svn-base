@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout1111"
+        android:layout_marginBottom="10dp"
+        android:fadingEdge="none"
+        android:background="#ffffff"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/isover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/choosepersonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                 android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/operator_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="执行人:"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/personNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imagelinear"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/choosepersonlayout"
+                android:background="#0479fb"
+                android:visibility="gone" />
+
+            <com.xguanjia.hx.common.NestListView
+                android:id="@+id/counter__operator_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagelinear"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/line"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imagelinear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/counter__operator_listview"
+                android:background="@drawable/line"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagelinear3"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp" />
+
+                    <com.xguanjia.hx.attachment.view.AttachmentGridView
+                        android:id="@+id/imageChooseGrid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="3"
+                        android:paddingRight="10dp"
+                        android:verticalSpacing="10dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_counter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/counter_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/counter_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:text="会签意见投票："
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/counterSign"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/counter_agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="同意"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/counter_disagree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拒绝"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/counter_renunciation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="弃权"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imagelinear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlayout_counter"
+                android:background="@drawable/line"
+                android:visibility="gone" />
+
+            <com.xguanjia.hx.common.NestListView
+                android:id="@+id/counter_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagelinear1"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/line"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imagelinear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/counter_listview"
+                android:background="@drawable/line"
+                android:visibility="gone" />
+
+            <com.xguanjia.hx.common.NestListView
+                android:id="@+id/detail_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagelinear2"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/line" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout1111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout2222"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <EditText
+            android:id="@+id/comment_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:hint="写意见"
+            android:paddingLeft="5dp"
+            android:background="@drawable/form_bg"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2222"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/btn_lan"
+            android:text="提交"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:text="驳回"
+            android:background="@drawable/btn_red"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

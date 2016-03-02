@@ -1,0 +1,71 @@
+package com.xguanjia.hx.plugin.activity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.widget.RelativeLayout.LayoutParams;
+
+import com.chinamobile.salary.R;
+import com.xguanjia.hx.common.Constants;
+import com.xguanjia.hx.common.activity.BaseActivity;
+import com.xguanjia.hx.plugin.bean.PlugBean;
+
+/*************
+ * webview界面
+ * 
+ * @Title: PlugWebViewActivity.java
+ * @Packagecom.xguanjia.hx.plugin
+ * @Description: TODO(用一句话描述该文件做什么)
+ * @author 吴金龙
+ * @date 2013-12-5
+ * @version V1.0
+ */
+public class PlugWebViewActivity extends BaseActivity {
+	private WebView plugWebView;
+	private PlugBean plugBean;
+	private Intent intent;
+	private View view;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		initView();
+	}
+
+	private void initView() {
+		intent = this.getIntent();
+		LayoutParams param = new LayoutParams(LayoutParams.FILL_PARENT,
+				LayoutParams.FILL_PARENT);
+		plugBean = (PlugBean) intent.getSerializableExtra("bean");
+		setTitleText(plugBean.getClientMenuName());
+		this.setTitleLeftButtonBack("", R.drawable.back_selector,
+				new OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						finish();
+					}
+				});
+		view = getLayoutInflater().inflate(R.layout.plug_webview, null);
+		mainView.addView(view, param);
+		
+		plugWebView=(WebView)this.findViewById(R.id.plugWebView);
+		plugWebView.getSettings().setSupportZoom(true);
+		plugWebView.getSettings().setJavaScriptEnabled(true);
+		plugWebView.getSettings().setUseWideViewPort(true);
+		plugWebView.getSettings().setLoadWithOverviewMode(true);
+		plugWebView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+		plugWebView.clearCache(true);
+		plugWebView.destroyDrawingCache();
+		String filePath=plugBean.getTemplateName();
+		Log.i("loadUrl", "file://"+Constants.SAVE_IMAGE_PATH+filePath+"/index.html?userId="+Constants.userId);
+		plugWebView.loadUrl("file://"+Constants.SAVE_IMAGE_PATH+filePath+"/index.html?userId="+Constants.userId);
+		
+//		plugWebView.loadUrl("file://android_asset/www/port/index.html");
+	}
+}

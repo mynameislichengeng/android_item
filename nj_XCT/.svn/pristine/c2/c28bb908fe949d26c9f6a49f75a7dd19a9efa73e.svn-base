@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/time_tv"
+        style="@style/ChattingUISystem"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/chatsystem_bg"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="3dip" >
+
+        <RelativeLayout
+            android:id="@+id/chat_head_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:id="@+id/chat_head_iv"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:background="@drawable/chat_head_icon"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chat_content_layout"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/chat_head_layout" >
+
+            <LinearLayout
+                android:id="@+id/chat_to_warp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/chat_to_warp_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/chat_to_voice"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/chat_to_voice_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/chathistory_receive_voice_spk_01" />
+
+                    <ImageView
+                        android:id="@+id/chat_to_voice_anim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@anim/chat_receive_voice_spk" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chat_to_voice_length"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/chat_to_warp_view"
+                android:singleLine="true"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/chat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat_head_layout"
+                android:text="15:20"
+                android:paddingLeft="3dp"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

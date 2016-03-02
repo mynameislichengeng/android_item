@@ -1,0 +1,129 @@
+<com.xguanjia.hx.task.activity.AnimationTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/tab_"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tab_head"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_alignParentTop="true"
+            android:background="#0479fb" >
+
+            <Button
+                android:id="@+id/title_leftBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/back_selector"
+                android:onClick="titleLeftBtnClickListener"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" >
+            </Button>
+
+            <RadioGroup
+                android:id="@+id/schedule_re"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp" >
+
+                <RadioButton
+                    android:id="@+id/schedule_view"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tab_selector_organize"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="日历"
+                    android:textColor="#ff0479fb"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/schedule_list"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tab_selector_attention"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="列表"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:maxLines="2"
+                android:shadowColor="#FF000000"
+                android:shadowDx="0"
+                android:shadowDy="-1.0"
+                android:shadowRadius="2.5"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </TextView>
+
+            <Button
+                android:id="@+id/title_rightBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/title_rightbutton_selector"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" >
+            </Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_body"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tab_foot"
+            android:layout_below="@+id/tab_head"
+            android:scrollbars="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_foot"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:layout_weight="0.0"
+                android:background="#F0F8FF" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.xguanjia.hx.task.activity.AnimationTabHost>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="stringInfoRecipients">接收人：</string>
+    <string name="stringInfoSenders">发件人：</string>
+    <string name="stringTheme">消息标题：</string>
+    <string name="stringWriteMail">写邮件</string>
+    <string name="stringAddAttachment"><b>添加附件</b></string>
+    <string name="stringPickPic">拍照</string>
+    <string name="stringChoosePic">选择照片</string>
+    <string name="stringRecord">录音</string>
+    <string name="stringOtherFile">其他文件</string>
+    <string name="stringOpenFile">打开文件</string>
+    <string name="stringSaveFile">保存文件</string>
+    <string name="stringDeleteFile">删除</string>
+    <string name="stringPreviewFile">预览</string>
+    <string name="stringListen">试听</string>
+    <string name="stringLoadContact">请先同步通讯录</string>
+    <string name="stringInfoSend">发送</string>
+    <string name="stringInfoSending">信息发送中，请稍后</string>
+    <string name="stringInfoReply">回复：</string>
+    <string name="stringReplyFrontContent">\n\n\n---原始消息---\n在</string>
+    <string name="stringReplyAfterContent">\n写道：</string>
+    <string name="stringInstallTools">请安装打开工具</string>
+    <string name="stringPersionImport">人员较多,正在后台努力导入中</string>
+
+</resources>

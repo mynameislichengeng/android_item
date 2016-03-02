@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_style"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout"/>
+
+    
+    <ListView
+        android:id="@+id/notify_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:focusable="true"
+        android:divider="@color/divider_line_color"
+        android:dividerHeight="0.6dp"
+        android:listSelector="@drawable/transparent_selector"
+        android:scrollbars="none" />
+
+</LinearLayout>

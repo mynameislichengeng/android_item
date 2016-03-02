@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1" >
+
+    <RelativeLayout
+        android:id="@+id/relativeContactContact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contact_item_click"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/imgContactFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/contact_flag" />
+
+        <TextView
+            android:id="@+id/txtContactContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgContactFlag"
+            android:text="通讯录"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/set_bgRight_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="matrix"
+            android:src="@drawable/bg_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgContactContact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeContactContact"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/relativeContactOrganize"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgContactContact"
+        android:background="@drawable/contact_item_click"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imgContactFlag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/organize_flag" />
+
+        <TextView
+            android:id="@+id/txtContactContent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgContactFlag1"
+            android:text="组织机构"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/set_bgRight_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="matrix"
+            android:src="@drawable/bg_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgContactOrganize"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeContactOrganize"
+        android:background="@drawable/line"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeContactGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgContactOrganize"
+        android:background="@drawable/contact_item_click"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/imgContactFlag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/group_flag" />
+
+        <TextView
+            android:id="@+id/txtContactContent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgContactFlag2"
+            android:text="分组"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/set_bgRight_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="matrix"
+            android:src="@drawable/bg_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgContactGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeContactGroup"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/relativeContactAttention"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgContactGroup"
+        android:background="@drawable/contact_item_click"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/imgContactFlag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/attention_flag" />
+
+        <TextView
+            android:id="@+id/txtContactContent3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgContactFlag3"
+            android:text="我的关注"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/set_bgRight_image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="matrix"
+            android:src="@drawable/bg_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgContact123"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeContactAttention"
+        android:background="@drawable/line"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/relativeContactself"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgContact123"
+        android:background="@drawable/contact_item_click"
+        android:clickable="true"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/imgContactFlag4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/attention_flag" />
+
+        <TextView
+            android:id="@+id/txtContactContent4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgContactFlag4"
+            android:text="个人通讯录"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/set_bgRight_image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="matrix"
+            android:src="@drawable/bg_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgContact124"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeContactself"
+        android:background="@drawable/line"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/relativeContactall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgContact124"
+        android:background="@drawable/contact_item_click"
+        android:clickable="true"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/imgContactFlag5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/attention_flag" />
+
+        <TextView
+            android:id="@+id/txtContactContent5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgContactFlag5"
+            android:text="公共通讯录"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/set_bgRight_image5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="matrix"
+            android:src="@drawable/bg_right" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imgContact125"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeContactall"
+        android:background="@drawable/line"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/relativeContactall1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgContact125"
+        android:background="@drawable/contact_item_click"
+        android:clickable="true"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/imgContactFlag6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/attention_flag" />
+
+        <TextView
+            android:id="@+id/txtContactContent6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgContactFlag6"
+            android:text="共享通讯录"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/set_bgRight_image6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="matrix"
+            android:src="@drawable/bg_right" />
+    </RelativeLayout>
+
+   
+    <ListView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeContactall1"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
+    <com.xguanjia.hx.contact.view.RightCharacterListView
+        android:id="@+id/rightSideBar"
+        android:layout_width="25dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#40000000" />
+
+</RelativeLayout>

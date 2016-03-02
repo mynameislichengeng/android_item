@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tm" type="drawable">#00000000</item>
+ 	<item name="item_dow" type="drawable">#E6E6E6</item>
+ 	 <item name="white" type="drawable">#F6F6F6</item>
+ 	 <item name="moshang_bottom_button2" type="drawable">#C4C0CF</item>
+ 	 <item name="moshang_bottom_button1" type="drawable">#F1F1F1</item>
+</resources>

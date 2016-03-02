@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white1" >
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/tableLayout01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioInfo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dp"
+                android:stretchColumns="1"
+                android:visibility="visible" >
+
+                <TableRow
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        style="@style/TableRowText"
+                        android:text="姓名：" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/user_name"
+                        style="@style/TableRowEdit"
+                        android:text="" >
+                    </EditText>
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/mobilePhoneLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <TableRow
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        style="@style/TableRowText"
+                        android:text="性别：" >
+                    </TextView>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="15dip"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/boy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="15dip"
+                            android:checked="true"
+                            android:text="男"
+                            android:textColor="@color/black_gray"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/girl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="15dip"
+                            android:text="女"
+                            android:textColor="@color/black_gray"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/mobilePhoneLine1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <TableRow
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        style="@style/TableRowText"
+                        android:text="年龄：" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/age"
+                        style="@style/TableRowEdit"
+                        android:numeric="integer"
+                        android:text="" >
+                    </EditText>
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/mobilePhoneLine2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <TableRow
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        style="@style/TableRowText"
+                        android:text="手机号码：" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        style="@style/TableRowEdit"
+                        android:phoneNumber="true"
+                        android:text="" >
+                    </EditText>
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/mobilePhoneLine3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <TableRow
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        style="@style/TableRowText"
+                        android:phoneNumber="true"
+                        android:text="座机号码：" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/telephone"
+                        style="@style/TableRowEdit"
+                        android:phoneNumber="true"
+                        android:text="" >
+                    </EditText>
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/mobilePhoneLine4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <TableRow
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        style="@style/TableRowText"
+                        android:text="Q	Q：" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/qq"
+                        style="@style/TableRowEdit"
+                        android:numeric="integer"
+                        android:text="" >
+                    </EditText>
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/mobilePhoneLine5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <TableRow
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        style="@style/TableRowText"
+                        android:text="职位：" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/off_position"
+                        style="@style/TableRowEdit"
+                        android:text="" >
+                    </EditText>
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/mobilePhoneLine6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <TableRow
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        style="@style/TableRowText"
+                        android:text="Email：" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/email"
+                        style="@style/TableRowEdit"
+                        android:digits="@string/register_name_digits"
+                        android:text="" >
+                    </EditText>
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/mobilePhoneLine7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <TableRow
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        style="@style/TableRowText"
+                        android:text="地址：" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/address"
+                        style="@style/TableRowEdit"
+                        android:text="" >
+                    </EditText>
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/mobilePhoneLine8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <TableRow
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        style="@style/TableRowText"
+                        android:text="备注：" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/content"
+                        style="@style/TableRowEdit"
+                        android:text="" >
+                    </EditText>
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/mobilePhoneLine9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <TableRow
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        style="@style/TableRowText"
+                        android:text="传真：" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/fax"
+                        style="@style/TableRowEdit"
+                        android:text="" >
+                    </EditText>
+
+                    <TableRow
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dip" >
+
+                        <TextView
+                            style="@style/TableRowText"
+                            android:text="生日：" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/birthday"
+                            style="@style/TableRowEdit"
+                            android:text="" >
+                        </EditText>
+                    </TableRow>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

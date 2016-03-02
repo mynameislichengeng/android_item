@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/introTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="江苏移动薪酬通项目团队是一支富有朝气，积极进取、坚持创新的新型工作手机开发团队，我们致力于让企业用户可通过移动互联网渠道，第一时间了解个人薪酬、奖金等福利信息，节约企业工资条发放成本，提升企业对员工的人文关怀。\n薪酬通项目团队由研发班的五个人共同组成，覆盖了从产品设计、规划到产品测试、优化体验的各方面："
+        android:textColor="#7d7d7d"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/line" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:divider="@drawable/line"
+        android:scrollbars="none" />
+
+</LinearLayout>

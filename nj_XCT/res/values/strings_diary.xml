@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- 工作 日志 -->
+    <string name="diary_title">标题：</string>
+    <string name="diary_content">内容：</string>
+    <string name="diary_isSend">是否上送：</string>
+    <string name="diary_send">是</string>
+    <string name="diary_unsend">否</string>
+    <string name="diary_type">日志类型：</string>
+    <string name="diary_workType">工作日志</string>
+    <string name="diary_personalType">个人日志</string>
+    <string name="diary_shareType">共享日志</string>
+    <string name="getsharediary">正在获取共享日志</string>
+    <string name="diary_addr">位置：</string>
+    <string name="diary_date">时间：</string>
+    <string name="diary_send_title">日志提交中</string>
+    <string name="diary_send_success">日志提交成功!</string>
+    <string name="diary_send_error">日志提交失败!</string>
+
+</resources>

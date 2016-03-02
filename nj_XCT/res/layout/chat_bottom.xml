@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/chat_input_wb_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="3dip" >
+
+        <RelativeLayout
+            android:layout_width="35dip"
+            android:layout_height="47dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dip"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/chat_voice_img"
+                android:layout_width="34dip"
+                android:layout_height="34dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/chat_button_voice" />
+
+            <ImageView
+                android:id="@+id/chat_keyborad_img"
+                android:layout_width="34dip"
+                android:layout_height="34dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/chat_button_text"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_tools_btn"
+            android:layout_width="35dip"
+            android:layout_height="47dip"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:src="@drawable/chat_button_tool_add" >
+            </ImageView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <!-- android:background="@drawable/chat_edit_text" -->
+
+            <EditText
+                android:id="@+id/chat_rich_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/chat_voice_button_off"
+                android:padding="3dp" />
+
+            <Button
+                android:id="@+id/chat_button_voice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/chat_send_btn"
+                android:paddingLeft="7dip"
+                android:paddingRight="7dip"
+                android:text="@string/motalk_voice_chat_tip_1"
+                android:textColor="@color/chat_send_text_color"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_emotion_bg"
+                android:tag="emotion" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/chat_send_btn"
+            android:paddingLeft="7dip"
+            android:paddingRight="7dip"
+            android:text="@string/send"
+            android:textColor="@color/chat_send_text_color" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.xguanjia.sdydbg.openfirecontact.view.ChatFaceView
+            android:id="@+id/chat_face_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/chat_tools_view"
+            android:layout_width="fill_parent"
+            layout="@layout/chat_tools_view"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

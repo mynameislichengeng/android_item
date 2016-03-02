@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvDetial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:background="#EAEAE9"
+    android:textColor="#6b6a6a"
+    android:paddingBottom="5dp"
+    android:paddingLeft="12dp"
+	style="@style/black_normal_18">
+
+</TextView>

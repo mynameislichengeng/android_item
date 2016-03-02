@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fadingEdge="none"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+		    
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="1dp"
+		     android:background="#EAEAE9"
+		    android:orientation="horizontal">
+		    
+		     <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:background="#ffffff"
+		        android:gravity="center_vertical|center_horizontal"
+		        style="@style/black_normal_18"/>
+		    
+		    <TextView
+		        android:id="@+id/nowmonthTv"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		         android:background="#ffffff"
+		           android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:layout_marginRight="1dp"
+		        android:text="十月"
+		        android:gravity="center_vertical|center_horizontal"
+		        style="@style/black_normal_18"/>
+		    
+		    <TextView
+		        android:id="@+id/lastmonthTv"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:text="十一月"
+		          android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:layout_marginRight="1dp"
+		         android:background="#ffffff"
+		        android:gravity="center_vertical|center_horizontal"
+		        style="@style/black_normal_18"/>
+		    
+		    <TextView
+		        android:id="@+id/resultTv"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		          android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:text="结果"
+		         android:background="#ffffff"
+		        android:gravity="center_vertical|center_horizontal"
+		        style="@style/black_normal_18"/>
+		    </LinearLayout>
+		    
+		<LinearLayout
+                android:id="@+id/llDetial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

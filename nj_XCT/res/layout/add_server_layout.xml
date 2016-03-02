@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/background_style" >
+    
+    <include layout="@layout/title_layout"/>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:fadingEdge="none">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/setting_margin_top"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+            
+            <EditText
+                android:id="@+id/servername"
+                style="@style/login_edit_box_style"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:hint="@string/server_name" />
+            
+            <EditText
+                android:id="@+id/server_address"
+                style="@style/login_edit_box_style"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:hint="@string/server_address" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:textColor="#9A3501"
+                android:layout_marginTop="15dp"
+                android:text="@string/server_default_prompt"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/new_user_register_text_color"
+                android:layout_marginTop="15dp"
+                android:text="@string/logistic_server"/>
+            
+            <EditText
+                android:id="@+id/logistic_server"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_edit_box_bg"
+                android:textCursorDrawable="@null"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:hint="" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/new_user_register_text_color"
+                android:layout_marginTop="10dp"
+                android:text="@string/sdk_server"/>
+            
+            <EditText
+                android:id="@+id/sdk_server"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_edit_box_bg"
+                android:textCursorDrawable="@null"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:hint="" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/new_user_register_text_color"
+                android:layout_marginTop="10dp"
+                android:text="@string/im_server"/>
+            
+            <EditText
+                android:id="@+id/im_server"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_edit_box_bg"
+                android:textCursorDrawable="@null"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:hint="" />
+            
+            <Button
+                android:id="@+id/addbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="@dimen/setting_margin_top"
+                android:background="@drawable/register_btn"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

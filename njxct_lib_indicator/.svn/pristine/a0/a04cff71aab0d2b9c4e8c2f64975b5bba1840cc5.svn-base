@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" 
+    tools:ignore="MissingTranslation">
+
+    <string name="app_name">HaoqeechatSDK</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="please_input_uid">请传入登录用户ID</string>
+    <string name="please_input_password">请传入登录用户密码</string>
+    <string name="please_input_host">请传入服务器地址</string>
+    <string name="please_input_port">请传入服务器端口号</string>
+    <string name="please_input_resourcename">请传入服务器域名</string>
+    <string name="please_input_listener">请传入登录监听对象</string>
+    <string name="network_error">网络连接错误</string>
+	<string name="unknown_addr">网络连接错误</string>
+	<string name="error_host">网络连接错误</string>
+	<string name="timeout">网络连接超时</string>
+	<string name="please_input_voice_path">请传入上传音频文件路径</string>
+	<string name="please_input_picture_path">请传入上传图片文件路径</string>
+	<string name="please_input_file_path">请传入上传文件路径</string>
+	<string name="please_input_location_info">请传入地理位置信息</string>
+	<string name="send_message_failed">消息发送失败</string>
+	<string name="please_login">请先登录</string>
+    
+    <string name="load_error">数据加载失败</string>
+    <string name="tc_group_operate_failed">操作失败</string>
+    <string name="been_remove_by_admin">被管理员移除了</string>
+    <string name="file_download_failed">文件下载失败</string>
+
+</resources>

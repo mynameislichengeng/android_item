@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_title_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip" >
+
+    <Button
+        android:id="@+id/contact_title_leftBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/back_selector"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:layout_centerVertical="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="invisible" >
+    </Button>
+
+    <Button
+        android:id="@+id/contact_title_rightBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dip"
+        android:background="@drawable/title_rightbutton_selector"
+        android:onClick="titleRightBtnClickListener"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="invisible" >
+    </Button>
+
+    <RadioGroup
+        android:id="@+id/contact_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" >
+        
+		<RadioButton
+            android:id="@+id/radio_organize"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_selector_organize"
+            android:button="@null"
+            android:gravity="center"
+            android:text="组织机构"
+            android:textSize="14sp"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio_listForm"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_selector_attention"
+            android:button="@null"
+            android:gravity="center"
+            android:text="全部"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+</RelativeLayout>

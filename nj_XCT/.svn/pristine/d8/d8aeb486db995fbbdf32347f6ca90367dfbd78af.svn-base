@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/relateleft"
+            android:layout_width="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:background="@color/blue" >
+
+            <Button
+                android:id="@+id/btnLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+             	android:layout_centerVertical="true"
+                android:text="收藏"
+                android:drawableLeft="@drawable/collect_n"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/likecount"
+                android:layout_toRightOf="@+id/btnLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:text="(100)"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relateright"
+            android:layout_width="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:background="@color/blue" >
+
+            <Button
+                android:id="@+id/btnRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingLeft="17dp"
+                android:layout_centerVertical="true"
+                android:text="举报"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relatecenter"
+            android:layout_width="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:background="@color/blue" >
+
+            <Button
+                android:id="@+id/btncenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingLeft="17dp"
+                android:layout_centerVertical="true"
+                android:text="分享"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
